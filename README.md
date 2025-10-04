@@ -1,66 +1,197 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Baita Feira:Conectando Microempreendedores e Clientes em Feiras de Porto Alegre
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+_Jordana Scher e Sofia Pedroso_
 
-## About Laravel
+Este artigo tem como objetivo ilustrar a documentação de um projeto final na unidade curricular Projeto de Desenvolvimento II dos cursos Análise e Desenvolvimento de Sistemas, Sistemas para Internet e Ciência de Dados e Inteligência Analítica do Centro Universitário Senac-RS.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Resumo do Projeto
+![Texto alternativo](./resources/images/comparativosistemacorrelato.jpg)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Microempreendedores que participam de feiras em Porto Alegre enfrentam dificuldades para divulgar seus eventos e alcançar maior visibilidade junto ao público.
+A ausência de um canal centralizado de informações gera baixa divulgação, reduz o engajamento dos consumidores e limita o crescimento dos pequenos negócios locais.
+Este projeto propõe o desenvolvimento de uma aplicação web responsiva que conecte expositores e consumidores, reunindo em um só espaço dados sobre eventos, marcas e produtos.
+Como resultado, espera-se ampliar a visibilidade dos microempreendedores, fortalecer a participação do público e estimular a valorização do comércio local.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Definição do Problema
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Microempresários que participam de feiras em Porto Alegre enfrentam dificuldades para divulgar seus eventos e
+alcançar um público maior. Não existe um canal centralizado que concentre informações sobre os eventos, marcas
+participantes, promoções e atualizações. Isso gera baixa visibilidade para os expositores e limita as oportunidades
+de consumidores interessados em conhecer novidades e apoiar pequenos negócios locais.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Objetivo Geral
+Desenvolver uma aplicação web responsiva que centralize a divulgação de eventos de feiras em Porto Alegre, permitindo que microempresários promovam seus negócios e consumidores encontrem informações de forma rápida e intuitiva.
 
-## Laravel Sponsors
+## Objetivos Específicos
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+* Permitir o cadastro de perfis de expositores com informações de contato, marca e redes sociais.
 
-### Premium Partners
+* Disponibilizar ferramentas para criação, edição e publicação de eventos e produtos.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+* Implementar filtros de busca (por data, hora e local) que facilitem a descoberta de feiras e marcas.
 
-## Contributing
+* Viabilizar que consumidores favoritem eventos e marcas de interesse, recebendo notificações simples.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+* Proporcionar uma interface responsiva, intuitiva e acessível.
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Stack Tecnológico
 
-## Security Vulnerabilities
+A solução foi projetada com foco no público do Baita Feira, visando oferecer uma aplicação acessível, responsiva e de fácil interação tanto para consumidores quanto para microempreendedores. Para isso, foram selecionadas tecnologias consolidadas no mercado, capazes de garantir robustez, segurança e boa experiência de uso. As principais são:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+* HTML5 e CSS3:
+O HTML5 e o CSS3 são a base estrutural e visual da aplicação. O HTML organiza os conteúdos da página, enquanto o CSS estiliza e garante um design moderno e responsivo. Essa escolha possibilita interfaces compatíveis com diferentes navegadores e dispositivos, fundamentais para alcançar um público variado.
 
-## License
+* Bootstrap:
+O Bootstrap foi incorporado para acelerar o desenvolvimento da interface e garantir responsividade. Sua biblioteca de componentes facilita a construção de layouts consistentes, permitindo que usuários do Baita Feira tenham uma experiência fluida, seja acessando de um celular em uma feira ou de um computador em casa.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+* JavaScript:
+O JavaScript é essencial para trazer dinamismo à aplicação, tornando-a mais interativa e intuitiva. Ele será utilizado para validações, efeitos visuais e interações em tempo real, enriquecendo a experiência dos consumidores ao navegar pelas feiras e marcas cadastradas.
+
+* Laravel:
+Laravel é o framework PHP escolhido para o back-end, estruturado no padrão MVC. Ele oferece ferramentas robustas como autenticação, ORM Eloquent, migrations e sistema de rotas, garantindo segurança, escalabilidade e facilidade na manutenção do projeto. Essa escolha contribui diretamente para a confiabilidade da aplicação que servirá como canal oficial de divulgação dos eventos.
+
+* MySQL:
+O MySQL é o banco de dados relacional utilizado para armazenamento das informações de usuários, eventos e produtos. Sua integração nativa com o Laravel, aliada à confiabilidade e ao desempenho, tornam-no uma escolha adequada para garantir consistência e eficiência no gerenciamento dos dados do sistema.
+
+* GitHub para Versionamento:
+O GitHub será utilizado para versionamento do código-fonte, possibilitando colaboração, rastreamento de mudanças e aplicação de boas práticas no desenvolvimento. Essa ferramenta é essencial para garantir organização e transparência ao longo da evolução do sistema.
+
+* Umbler para Hospedagem:
+A hospedagem será realizada na Umbler, que oferece suporte nativo a PHP/Laravel e bancos de dados MySQL. Essa escolha garante um ambiente confiável, escalável e de baixo custo, alinhado à proposta do projeto de atender microempreendedores locais com eficiência.
+
+## Descrição da Solução
+
+Diagrama de Fluxo Arquitetal, abaixo:
+
+A solução será o desenvolvimento de uma aplicação web responsiva que permitirá que microempresários
+cadastrem seus eventos, estandes e produtos, enquanto consumidores poderão descobrir feiras, conhecer marcas
+e receber notificações.
+Escopo do MVP (mínimo produto viável):
+* Microemprendedor: cadastro de perfil (com nome, marca, contato e redes sociais), criação e edição de eventos,
+cadastro de produtos e publicação de informações.
+* Consumidor: cadastro/login, visualização de feiras e expositores, busca por filtros (data, hora e local),
+possibilidade de favoritar marcas/eventos e recebimento de notificações simples.
+* Funcionalidades gerais: página inicial responsiva com listagem de feiras e expositores, busca por filtros e
+interface intuitiva prototipada no Figma.
+
+## Arquitetura
+O sistema Baita Feira foi projetado com foco em responsividade, escalabilidade e manutenção fácil, utilizando o padrão MVC (Model-View-Controller) com Laravel. A arquitetura é dividida em camadas, cada uma responsável por uma função específica:
+
+* 1. Camada de Apresentação (Front-End)
+
+Tecnologias: HTML5, CSS3, Bootstrap e JavaScript.
+
+Função: Exibir interfaces para microempreendedores e clientes, garantindo uma experiência intuitiva e responsiva em diferentes dispositivos.
+
+Responsabilidades:
+
+Exibir listagem de feiras, expositores e produtos.
+
+Permitir interações como favoritar marcas, visualizar eventos e adicionar fotos favoritas.
+
+
+* 2. Camada de Controle (Back-End)
+
+Tecnologia: Laravel (PHP)
+
+Função: Implementar a lógica de negócio do sistema, gerenciar fluxos e autenticação.
+
+Responsabilidades:
+
+Controlar o acesso ao sistema, cadastro e login de usuários.
+
+Gerenciar criação, edição e exclusão de eventos, produtos e cupons.
+
+Processar ações do cliente, como favoritar marcas e usar cupons.
+
+Integrar notificações via WhatsApp ou outro canal.
+
+* 3. Camada de Modelo (Banco de Dados)
+
+Tecnologia: MySQL
+
+Função: Armazenar dados estruturados do sistema de forma segura e eficiente.
+
+Responsabilidades:
+
+Armazenar informações de usuários (microempreendedores e clientes).
+
+Registrar eventos, produtos e cupons associados aos expositores.
+
+Manter histórico de interações do cliente (favoritos, fotos, uso de cupons).
+
+* 4. Integrações Externas
+
+Notificações via WhatsApp: alertas para clientes sobre eventos ou promoções.
+
+Versionamento de código: GitHub, permitindo controle de alterações e colaboração entre Sofia e Jordana.
+
+* 5. Hospedagem e Deploy
+
+Tecnologia: Umbler
+
+Função: Servir a aplicação web de forma estável e escalável.
+
+Responsabilidades:
+
+Suportar Laravel e MySQL.
+
+Garantir disponibilidade contínua e acesso rápido aos usuários.
+
+
+Devem ser realizados no mínimo 5 artefatos.
+
+A seguir são apresentados exemplos de artefatos que podem ser apresentados:
+
+* Benchmarking (tabela comparativa)
+
+
+* MVP CANVA com as Personas
+
+* Casos de uso 
+
+* Protótipos de interface de alta
+Aqui temos as imagens das telas dos microemprendedores e as telas dos consumidores das feiras
+
+* Plano de Negócios
+
+Exemplos de repositórios:
+
+
+[https://github.com/gbmachado/projetoFinal](https://github.com/gbmachado/projetoFinal)
+
+[https://github.com/fga-eps-mds/2018.1-IncluCare](https://github.com/fga-eps-mds/2018.1-IncluCare)
+
+## Validação
+A validação do sistema será realizada por meio de testes funcionais e de usabilidade, visando garantir que as principais funcionalidades atendam às necessidades dos microempreendedores e consumidores do Baita Feira. Primeiramente, serão aplicados testes de funcionalidade para verificar o correto funcionamento de recursos como cadastro de usuários, criação de eventos, busca por feiras e interação com expositores.
+
+Em seguida, será feita uma validação prática junto a um grupo reduzido de usuários (microempreendedores e consumidores convidados), que terão acesso à aplicação em ambiente de testes. Essa etapa permitirá coletar feedback sobre a experiência de navegação, clareza das informações e facilidade de uso da plataforma.
+
+O processo de validação terá impacto direto no desenvolvimento, pois o feedback recebido será utilizado para realizar ajustes de interface, corrigir falhas de usabilidade e aperfeiçoar a performance do sistema. Como consequência, espera-se obter um produto final mais aderente às necessidades do público, garantindo maior aceitação do público consumidor do app e efetividade no apoio à divulgação dos eventos e negócios locais.
+
+### Estratégia
+Para compreender as reais necessidades do público-alvo, foi realizada uma entrevista com dois grupos distintos: consumidores que frequentam feiras locais e microempreendedores que participam como expositores. O objetivo dessa etapa foi levantar informações sobre dificuldades, expectativas e funcionalidades desejadas em uma aplicação que centralize dados de eventos e marcas.
+
+As entrevistas buscaram identificar os principais problemas enfrentados por cada grupo. Do lado dos microempreendedores, destacou-se a dificuldade em divulgar eventos e atrair novos clientes. Já os consumidores relataram a falta de um canal centralizado para acessar informações sobre feiras, horários e expositores. Essas informações foram essenciais para direcionar o que fazer no sistema.
+
+### Consolidação dos Dados Coletados-Entrevistas
+
+As entrevistas com microemprendedores e clientes de feiras em Porto Alegre indicaram que há dificuldade na divulgação de eventos e produtos e a necessidade de um canal centralizado de informações.
+Microemprendedores desejam cadastrar e gerenciar produtos, cupons e eventos de forma mais simples,
+enquanto clientes buscam descobrir feiras, favoritar marcas e receber notificações.Esses dados foram fundamentais para
+o desenvolvimento do sistema, garantindo funcionalidades que atendam as necessidades dos usuários.
+
+## Conclusões
+
+O Baita feira mostrou ter o potencial de uma plataforma web centralizada informações de feiras,microemprendedores e produtos, facilitando a interação com clientes e aumentando a visibilidade dos expositores.
+Futuras melhorias do Baita Feira incluem: permitir a reserva de produtos para o dia da feira, transformar em e-commerce para compras online.
+
+
+## Referências Bibliográficas
+Lista de todo material bibliográfico utilizado para a realização deste documento, incluindo: livros, sites, artigos, etc.
+
+STAUFFER, Matt.Desenvolvimento cm Laravel: um framework para construção de aplicativos PHP modernos. São Paulo: Novatec, 2017.
+ELMASRI, R. E.; NAVATHE, S. BS. istemas de banco de dados. 7. ed. São Paulo: Pearson, 2019.

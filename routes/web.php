@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\CadastroController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\LojaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +16,15 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::resource('users', UserController::class);
+// Route::resource('users', UserController::class);
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/cadastro/registrar', [CadastroController::class, 'registrar'])->name('cadastro.registrar');
+Route::post('/cadastro/salvar', [CadastroController::class, 'salvar'])->name('cadastro.salvar');
+
+Route::get('/login/entrar', [LoginController::class, 'login'])->name('login.entrar');
+Route::post('/login/validar', [LoginController::class, 'validar'])->name('login.validar');
+
+Route::resource('lojas', LojaController::class);
+
+Route::get('/', [LoginController::class, 'login'])->name('login.entrar');
+
