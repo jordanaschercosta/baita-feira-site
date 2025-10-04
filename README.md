@@ -5,7 +5,6 @@ _Jordana Scher e Sofia Pedroso_
 Este artigo tem como objetivo ilustrar a documentação de um projeto final na unidade curricular Projeto de Desenvolvimento II dos cursos Análise e Desenvolvimento de Sistemas, Sistemas para Internet e Ciência de Dados e Inteligência Analítica do Centro Universitário Senac-RS.
 
 ## Resumo do Projeto
-![Texto alternativo](./resources/images/comparativosistemacorrelato.jpg)
 
 Microempreendedores que participam de feiras em Porto Alegre enfrentam dificuldades para divulgar seus eventos e alcançar maior visibilidade junto ao público.
 A ausência de um canal centralizado de informações gera baixa divulgação, reduz o engajamento dos consumidores e limita o crescimento dos pequenos negócios locais.
@@ -65,6 +64,7 @@ A hospedagem será realizada na Umbler, que oferece suporte nativo a PHP/Laravel
 ## Descrição da Solução
 
 Diagrama de Fluxo Arquitetal, abaixo:
+![Texto alternativo](./resources/images/diagramadefluxoarquitetonico.jpg)
 
 A solução será o desenvolvimento de uma aplicação web responsiva que permitirá que microempresários
 cadastrem seus eventos, estandes e produtos, enquanto consumidores poderão descobrir feiras, conhecer marcas
@@ -80,7 +80,7 @@ interface intuitiva prototipada no Figma.
 ## Arquitetura
 O sistema Baita Feira foi projetado com foco em responsividade, escalabilidade e manutenção fácil, utilizando o padrão MVC (Model-View-Controller) com Laravel. A arquitetura é dividida em camadas, cada uma responsável por uma função específica:
 
-* 1. Camada de Apresentação (Front-End)
+* Camada de Apresentação (Front-End)
 
 Tecnologias: HTML5, CSS3, Bootstrap e JavaScript.
 
@@ -93,7 +93,7 @@ Exibir listagem de feiras, expositores e produtos.
 Permitir interações como favoritar marcas, visualizar eventos e adicionar fotos favoritas.
 
 
-* 2. Camada de Controle (Back-End)
+*  Camada de Controle (Back-End)
 
 Tecnologia: Laravel (PHP)
 
@@ -109,7 +109,7 @@ Processar ações do cliente, como favoritar marcas e usar cupons.
 
 Integrar notificações via WhatsApp ou outro canal.
 
-* 3. Camada de Modelo (Banco de Dados)
+*  Camada de Modelo (Banco de Dados)
 
 Tecnologia: MySQL
 
@@ -123,13 +123,13 @@ Registrar eventos, produtos e cupons associados aos expositores.
 
 Manter histórico de interações do cliente (favoritos, fotos, uso de cupons).
 
-* 4. Integrações Externas
+* Integrações Externas
 
 Notificações via WhatsApp: alertas para clientes sobre eventos ou promoções.
 
 Versionamento de código: GitHub, permitindo controle de alterações e colaboração entre Sofia e Jordana.
 
-* 5. Hospedagem e Deploy
+* Hospedagem e Deploy
 
 Tecnologia: Umbler
 
@@ -147,23 +147,20 @@ Devem ser realizados no mínimo 5 artefatos.
 A seguir são apresentados exemplos de artefatos que podem ser apresentados:
 
 * Benchmarking (tabela comparativa)
-
+![Texto alternativo](./resources/images/comparativosistemacorrelato.jpg)
 
 * MVP CANVA com as Personas
-
+![Texto alternativo](./resources/images/canvamvp.jpg)
 * Casos de uso 
-
+![Texto alternativo](./resources/images/diagramacasouso.jpg)
 * Protótipos de interface de alta
-Aqui temos as imagens das telas dos microemprendedores e as telas dos consumidores das feiras
+Aqui temos as imagens das telas dos microemprendedores
+![Texto alternativo](./resources/images/telaautofidelidademicroemprendedor.jpg)
 
+Aqui temos as imagens das telas dos consumidores das feiras
+![Texto alternativo](./resources/images/figmatelausuariofrequentamfeira.jpg)
 * Plano de Negócios
-
-Exemplos de repositórios:
-
-
-[https://github.com/gbmachado/projetoFinal](https://github.com/gbmachado/projetoFinal)
-
-[https://github.com/fga-eps-mds/2018.1-IncluCare](https://github.com/fga-eps-mds/2018.1-IncluCare)
+![Texto alternativo](./resources/images/planodenegócio.jpg)
 
 ## Validação
 A validação do sistema será realizada por meio de testes funcionais e de usabilidade, visando garantir que as principais funcionalidades atendam às necessidades dos microempreendedores e consumidores do Baita Feira. Primeiramente, serão aplicados testes de funcionalidade para verificar o correto funcionamento de recursos como cadastro de usuários, criação de eventos, busca por feiras e interação com expositores.
@@ -172,12 +169,12 @@ Em seguida, será feita uma validação prática junto a um grupo reduzido de us
 
 O processo de validação terá impacto direto no desenvolvimento, pois o feedback recebido será utilizado para realizar ajustes de interface, corrigir falhas de usabilidade e aperfeiçoar a performance do sistema. Como consequência, espera-se obter um produto final mais aderente às necessidades do público, garantindo maior aceitação do público consumidor do app e efetividade no apoio à divulgação dos eventos e negócios locais.
 
-### Estratégia
+## Estratégia
 Para compreender as reais necessidades do público-alvo, foi realizada uma entrevista com dois grupos distintos: consumidores que frequentam feiras locais e microempreendedores que participam como expositores. O objetivo dessa etapa foi levantar informações sobre dificuldades, expectativas e funcionalidades desejadas em uma aplicação que centralize dados de eventos e marcas.
 
 As entrevistas buscaram identificar os principais problemas enfrentados por cada grupo. Do lado dos microempreendedores, destacou-se a dificuldade em divulgar eventos e atrair novos clientes. Já os consumidores relataram a falta de um canal centralizado para acessar informações sobre feiras, horários e expositores. Essas informações foram essenciais para direcionar o que fazer no sistema.
 
-### Consolidação dos Dados Coletados-Entrevistas
+## Consolidação dos Dados Coletados-Entrevistas
 
 As entrevistas com microemprendedores e clientes de feiras em Porto Alegre indicaram que há dificuldade na divulgação de eventos e produtos e a necessidade de um canal centralizado de informações.
 Microemprendedores desejam cadastrar e gerenciar produtos, cupons e eventos de forma mais simples,
