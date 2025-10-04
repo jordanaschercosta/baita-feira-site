@@ -152,13 +152,16 @@ A seguir são apresentados exemplos de artefatos que podem ser apresentados:
 * MVP CANVA com as Personas
 ![Texto alternativo](./resources/images/canvamvp.jpg)
 * Casos de uso 
+
 ![Texto alternativo](./resources/images/diagramacasouso.jpg)
 * Protótipos de interface de alta
-Aqui temos as imagens das telas dos microemprendedores
+
+* Aqui temos as imagens das telas dos microemprendedores
 ![Texto alternativo](./resources/images/telaautofidelidademicroemprendedor.jpg)
 
-Aqui temos as imagens das telas dos consumidores das feiras
+* Aqui temos as imagens das telas dos consumidores das feiras
 ![Texto alternativo](./resources/images/figmatelausuariofrequentamfeira.jpg)
+
 * Plano de Negócios
 ![Texto alternativo](./resources/images/planodenegócio.jpg)
 
